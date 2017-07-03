@@ -1,0 +1,24 @@
+management.security.enabled: false
+server:
+  port: 8081
+spring:
+  application:
+    name: simple-rest-source
+  sleuth.sampler.percentage: 1
+
+  cloud:
+    stream:
+      jms.ibmmq:
+        host: localhost
+        port: 1416
+        queueManager: testDev
+        channel: troll.SVRCONN
+        transportType: 1
+        binder:
+          default-destination-type: queue
+
+      bindings:
+        output:
+          destination: TROLL.MESSAGE.SOURCE
+        database:
+          destination: TROLL.DATABASE

@@ -1,0 +1,24 @@
+management.security.enabled: false
+server:
+  port: 8082
+spring:
+  application:
+    name: troll-processor
+  sleuth.sampler.percentage: 1
+  cloud:
+    stream:
+      jms.ibmmq:
+         host: localhost
+         port: 1416
+         queueManager: testDev
+         channel: troll.SVRCONN
+        binder:
+          default-destination-type: queue
+
+      bindings:
+        input:
+          destination: TROLL.MESSAGE.SOURCE
+        output:
+          destination: TROLL.MESSAGE.PROCESSOR
+        database:
+          destination: TROLL.DATABASE
