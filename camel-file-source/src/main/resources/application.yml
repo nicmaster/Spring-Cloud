@@ -1,0 +1,33 @@
+management.security.enabled: false
+server:
+  port: 8084
+spring:
+  application:
+    name: camel-file-source
+  sleuth.sampler.percentage: 1
+
+  cloud:
+    stream:
+      jms.ibmmq:
+        host: 22.144.141.127
+        port: 1416
+        queueManager: MQBSDEV1
+        channel: BISONDTMP.SVRCONN
+        transportType: 1
+        binder:
+          default-destination-type: queue
+
+      bindings:
+        input:
+          destination: TROLL.MESSAGE.SOURCE
+        database:
+          destination: TROLL.DATABASE
+
+
+file:
+  fileProperties:
+    filePath: /shared/dev/troll
+    readLock: changed
+    readLockCheckInterval: 2000
+    serviceCode: 1
+

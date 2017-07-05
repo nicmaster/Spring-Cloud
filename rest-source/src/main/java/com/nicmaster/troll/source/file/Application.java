@@ -1,4 +1,4 @@
-package com.nicmaster.troll.source;
+package com.nicmaster.troll.source.file;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

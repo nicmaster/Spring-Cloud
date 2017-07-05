@@ -23,6 +23,7 @@
         <module>rest-source</module>
 		<module>processor</module>
 		<module>database-sink</module>
+		<module>camel-file-source</module>
 	</modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

@@ -1,7 +1,7 @@
-package com.nicmaster.troll.source.web.rest;
+package com.nicmaster.troll.source.file.web.rest;
 
 import com.nicmaster.troll.domain.Message;
-import com.nicmaster.troll.source.service.MessageService;
+import com.nicmaster.troll.source.file.service.MessageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.RequestBody;

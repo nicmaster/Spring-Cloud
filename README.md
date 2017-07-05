@@ -16,7 +16,8 @@ You will need the following to run this project:
 
 ### Domain Message
 
-Message object
+* Message object
+
 {
   "applicationName": "sharp",
   "transactionType": "cheque",
@@ -35,3 +36,17 @@ Message object
 
 Rest end point for rest-source project http://localhost:8081/message
 
+### Camel File Source
+
+* XML message object
+
+<?xml version="1.0" encoding="UTF-8" ?>
+	<applicationName>sharp</applicationName>
+	<transactionType>cheque</transactionType>
+	<messageType>client message</messageType>
+	<transactions>
+		<transactionReference>fgh44556kkh</transactionReference>
+		<clientName>nick bike shop</clientName>
+		<clientAccount>3390990909</clientAccount>
+		<transactionDate></transactionDate>
+	</transactions>

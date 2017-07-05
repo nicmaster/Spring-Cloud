@@ -1,4 +1,4 @@
-package com.nicmaster.troll.source.service;
+package com.nicmaster.troll.source.file.service;
 
 import com.nicmaster.troll.domain.Message;
 import org.springframework.beans.factory.annotation.Autowired;
